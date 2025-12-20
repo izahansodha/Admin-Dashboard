@@ -6,7 +6,7 @@ function Usertable({
 }) {
   return (
     <>
-    <div className="overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-white">
+    <div className="flex w-full h-full overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-white">
     <table className={styles.table}>
       <thead className="bg-gray-300">
         <tr>

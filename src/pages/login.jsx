@@ -11,7 +11,7 @@ function Login() {
   };
   return (
     <>
-    <div className="w-full h-150 p-4 flex flex-col items-center justify-center">
+    <div className="w-full h-full p-4 flex flex-col items-center justify-center">
      <h2 className="text-2xl font-bold text-gray-800 mb-6">login Page</h2>
       <div className="w-[300px]">
       <button className={styles.buttons} onClick={handlelogin}>login</button>

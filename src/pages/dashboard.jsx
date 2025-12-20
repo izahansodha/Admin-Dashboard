@@ -31,14 +31,14 @@ function Dashboard() {
   }
 
   return (
-    <div>
-      <div className="p-4 flex flex-col items-center">
+    <div className="w-full h-full">
+      <div className=" p-4 flex flex-col items-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
           Admin Dashboard
         </h2>
       </div>
       <div className="p-4 flex flex-col gap-4">
-        <div className="flex justify-center mb-6">
+        <div className="w-80  sm:w-100 flex justify-center mb-6">
           <UserChart stats={stats} />
         </div>
 

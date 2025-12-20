@@ -12,11 +12,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div className="flex w-full h-full">
         <Sidebar />
         <div style={{ flex: 1 }}>
           <ProtectedRoute>
-            <Navbar />
+            <div className="flex w-full ">
+               <Navbar  />
+            </div>
+           
           </ProtectedRoute>
 
           <div style={{ padding: "20px" }}>

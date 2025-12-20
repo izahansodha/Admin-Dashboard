@@ -37,12 +37,12 @@ function UserChart({ stats }) {
   };
 
   return (
-    <div className="w-100 h-[220px] bg-white p-4 rounded-xl shadow">
+    <div className="sm:w-full h-full bg-white p-4 rounded-xl shadow">
       <h3 className="text-base font-semibold mb-2">
         User Statistics
       </h3>
 
-      <div className="h-[160px]">
+      <div className="h-full w-full">
         <Bar
           data={data}
           options={{

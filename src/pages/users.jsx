@@ -168,10 +168,10 @@ function Users() {
   }
   return (
     <>
-      <div className="p-4 flex flex-col">
-        <div className="flex gap-3 mb-4">
+      <div className="w-full h-full p-4 flex flex-col">
+        <div className="w-full h-full flex gap-3 mb-4">
           <input
-            className="w-full p-2 border rounded mb-4"
+            className="w-50 sm:w-full p-2 border rounded mb-4"
             placeholder="Search user..."
             value={search}
             onChange={(e) => setsearch(e.target.value)}
@@ -188,7 +188,7 @@ function Users() {
         </div>
         
         {showForm && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className=" fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-2">
             {/* Modal Box */}
             <div className="bg-white rounded-lg w-[400px] p-6 relative">
               {/* Close Button */}
@@ -222,15 +222,17 @@ function Users() {
           message={toast.message}
           onClose={() => setToast({ show: false, message: "", type: "" })}
         />
-
-        <UserTable
+        <div className="w-full h-full flex">
+           <UserTable
           paginatedUsers={paginatedUsers}
           styles={styles}
           editid={editid}
           handledeleteuser={handledeleteuser}
           handleediteuser={handleediteuser}
         />
-        <div className="flex gap-4 mt-4 justify-center">
+        </div>
+       
+        <div className="w-full flex flex-col sm:flex-row gap-4 mt-4 justify-center items-center">
           <button
             className="w-50 text-center bg-gray-700 text-white p-2 rounded hover:bg-gray-800 transition"
             disabled={currentPage * usersPerPage >= filteredUsers.length}
